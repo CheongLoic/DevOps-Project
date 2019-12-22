@@ -8,4 +8,5 @@ install:
   - npm ci
 
 script:
+  - npm run populate
   - npm test

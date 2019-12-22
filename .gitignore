@@ -5,8 +5,7 @@ node_modules/
 #/db folder
 *.ldb
 *.log
-CURRENT
+db/**/CURRENT
 *.old
 db/**/LOG
-LOCK
 

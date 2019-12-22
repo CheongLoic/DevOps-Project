@@ -2,7 +2,7 @@ import {expect} from 'chai'
 import {LevelDB} from "../leveldb"
 import {UserHandler, User} from "../user";
 
-const dbPath: string = './db/test/users';
+const dbPath: string = './db/users';
 var dbUser: UserHandler;
 
 

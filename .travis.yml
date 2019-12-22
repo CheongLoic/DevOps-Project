@@ -8,4 +8,4 @@ install:
   - npm ci
 
 script:
-  - npm start
+  - npm test

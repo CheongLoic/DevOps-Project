@@ -1,4 +1,6 @@
 # ECE NodeJS Project 2019-2020
+[![Build Status](https://travis-ci.org/CheongLoic/nodejs_test.svg?branch=master)](https://travis-ci.org/CheongLoic/nodejs_test)
+
 
 ## Authors
 - CHEONG Loïc : huangloic@hotmail.com

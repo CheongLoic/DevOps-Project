@@ -8,4 +8,5 @@ node_modules/
 db/**/CURRENT
 *.old
 db/**/LOG
+db/**/MANIFEST-00000?
 

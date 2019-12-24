@@ -11,6 +11,7 @@ services:
   
   data: 
     image: node:10.16.0-alpine
+    build: .
     command: 
       - npm install
       - npm run populate

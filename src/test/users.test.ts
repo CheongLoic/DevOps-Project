@@ -38,7 +38,7 @@ describe('Users', function () {
                         expect(result).to.be.an('array')
                         expect(result).to.have.lengthOf(2)
                         expect(result).to.deep.include.members(users)
-                        console.log(result)
+                        //console.log(result)
                         done()
                     })
                 })
@@ -63,7 +63,7 @@ describe('Users', function () {
                     expect(result).to.not.be.undefined;
                     expect(result).to.be.an('array')
                     expect(result).to.have.lengthOf(1)
-                    console.log(result)
+                    //console.log(result)
                     done()
                 })
                 

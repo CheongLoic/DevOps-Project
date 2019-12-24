@@ -10,7 +10,7 @@ Student in the group ING 4 SI 03 Inter at ECE Paris
 ## About this work
 This work has been copied-pasted from the NodeJS project for the Web Technologies course at ECE Paris-Lyon. 
 This repository is used as a DevOps project. Please notice that this repository is poorer in commits and tags than the NodeJS one. 
-You can go to this repo to check out what I did in NodeJS (That's mostly me who did everything ...) : https://github.com/CheongLoic/ECE-NodeJS-Lab-2019 
+You can go to this repo to check out what I did in NodeJS (That's mostly me who did everything ...) : https://github.com/CheongLoic/ECE-NodeJS-Lab-2019. 
 I created this repository because my partner in NodeJS wanted to do his DevOps project with Python (or maybe for an other reason ...)
 
 There are : 
@@ -65,12 +65,14 @@ Then open a browser and go to the link http://localhost:8082/
 Execute `sudo docker-compose up -d`
 
 I tried to test docker-compose.yml several times, but it still doesn't work on the port 8090. I don't know how to fix it. At least I tried
+
 ![alt test](screenshots/Half_done.PNG)
 
 
 ## Run instructions (at the terminal for the NodeJS project)
 After you cloned the repository , execute those commands :
-- `cd Final-Project-NodeJS`
+- `git clone https://github.com/CheongLoic/DevOps-Project.git`
+- `cd DevOps-Project`
 - `npm install` Install all the dependencies
 - `npm run populate` Populate the database
 - `npm test` Unit tests with mocha and chai 

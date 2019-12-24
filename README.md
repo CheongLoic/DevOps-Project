@@ -1,5 +1,5 @@
 # ECE DevOps Project 2019-2020
-[![Build Status](https://travis-ci.org/CheongLoic/DevOps-Project.svg?branch=loic)](https://travis-ci.org/CheongLoic/DevOps-Project)
+[![Build Status](https://travis-ci.org/CheongLoic/DevOps-Project.svg?branch=master)](https://travis-ci.org/CheongLoic/DevOps-Project)
 
 
 ## Authors

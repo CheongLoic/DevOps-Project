@@ -164,17 +164,15 @@ authRouter.post('/delete', (req: any, res: any, next: any) => {
       res.redirect('/')
     })
   }
-
-  
-
-
 })
 
 //Add a new metric in user's database
 authRouter.post('/add', (req: any, res: any, next: any) => {
   if (req.body.timestamp !=="" && req.body.value !=="" && !isNaN(Number(req.body.value)) && !isNaN(Number(req.body.timestamp))) {
-    dbMet.add(req.session.user.username, req.body.timestamp, req.body.value)
-    res.redirect('/')
+    dbMet.add(req.session.user.username, req.body.timestamp, req.body.value, (err: Error | null) => {
+      if (err) throw err;
+      res.redirect('/')
+    })
   }
 })
 

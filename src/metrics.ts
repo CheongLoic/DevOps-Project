@@ -76,10 +76,10 @@ export class MetricsHandler {
   }
 
   //Add a new metric in user's database
-  public add(user : string, timestamp: string, value : string) {
+  public add(user : string, timestamp: string, value : string, callback: (error: Error | null) => void) {
     let key : string = "metric:"+user+":"+timestamp+""
     let Value : string = value
-    this.db.put(key,Value, (err)=>null)
+    this.db.put(key,Value, (err)=>callback(err))
   }
   
 }

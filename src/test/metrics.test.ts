@@ -53,20 +53,21 @@ describe('Metrics', function () {
             const username: string = "elisabeth";
             const timestamp: string = "1576843200000"; // before updating this metric, its value was equal to 20. See above
             const value: string = "100";
-            dbMet.add(username, timestamp, value)
-            //console.log("Data is updating") //DO NOT COMMIT THIS LINE!!
-            dbMet.getAll(username, function (err: Error | null, data?: Metric[] | null) {
-                expect(err).to.be.null;
-                expect(data).to.not.be.undefined;
-                expect(data).to.not.be.empty;
-                expect(data).to.be.an("array");
-                expect(data).to.have.lengthOf(2)
-                expect(data).to.deep.include.members([
-                    {timestamp: '1576843200000', value: '100'},
-                    {timestamp: '1576929600000', value: '50' }
-                ]);
-                //console.log(data)
-                done()
+            dbMet.add(username, timestamp, value, function (err: Error | null) {
+                expect(err).to.not.be.null;
+                dbMet.getAll(username, function (err: Error | null, data?: Metric[] | null) {
+                    expect(err).to.be.null;
+                    expect(data).to.not.be.undefined;
+                    expect(data).to.not.be.empty;
+                    expect(data).to.be.an("array");
+                    expect(data).to.have.lengthOf(2)
+                    expect(data).to.deep.include.members([
+                        {timestamp: '1576843200000', value: '100'},
+                        {timestamp: '1576929600000', value: '50' }
+                    ]);
+                    //console.log(data)
+                    done()
+                })
             })
         })
     })

@@ -62,6 +62,7 @@ Then open a browser and go to the link below http://localhost:8082/
 ### Docker-compose
 Execute `sudo docker-compose up -d`
 
+I tried to test docker-compose.yml several times, but it still doesn't. The problem comes from th memory. Don't know how to fix it. 
 ![alt test](Docker_compose_FAILING.PNG)
 
 

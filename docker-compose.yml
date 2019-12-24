@@ -1,7 +1,7 @@
 version: "3"
 services:
   appli: 
-    depends-on:
+    depends_on:
       - data
     image: node:latest
     command: npm start
@@ -15,7 +15,7 @@ services:
       - npm install
       - npm run populate
     restart: always
-		volumes:
+    volumes:
       - db_data:/app/db
 
 volumes:

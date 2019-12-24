@@ -60,7 +60,9 @@ Execute those commands below
 Then open a browser and go to the link below http://localhost:8082/
 
 ### Docker-compose
+Execute `sudo docker-compose up -d`
 
+![alt test](Docker_compose_FAILING.PNG)
 
 
 ## Run instructions (at the terminal for the NodeJS project)

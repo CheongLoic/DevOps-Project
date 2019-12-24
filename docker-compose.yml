@@ -1,15 +1,27 @@
 version: "3"
 services:
-  data: 
-    command: npm run populate
-		volumes:
-      - /app/db
-      - /app/node_modules
-      
-  appli:
+  appli: 
+    depends-on:
+      - data
     image: node:latest
+    command: npm start
     ports:
       - "8090:8082"
-    depends_on:
-      - data
+    restart: always
+  
+  data: 
+    image: node:latest
+    command: 
+      - npm install
+      - npm run populate
+    restart: always
+		volumes:
+      - db_data:/app/db
+
+volumes:
+  db_data: {}
+
+    
+    
+    
 

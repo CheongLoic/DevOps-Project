@@ -53,9 +53,10 @@ NB:
 
 ## Run instructions (at the terminal for the DevOps project)
 ### Dockerfile
-Run those commands below
+Execute those commands below
 - `sudo docker build -t my-docker .`
 - `sudo docker run -d -p 8082:8082 my-docker`
+
 Then open a browser and go to the link below http://localhost:8082/
 
 ### Docker-compose

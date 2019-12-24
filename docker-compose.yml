@@ -3,25 +3,18 @@ services:
   appli: 
     depends_on:
       - data
-    image: node:latest
-    command: npm start
+    image: node:10.16.0-alpine
+    command: npm run dev
     ports:
-      - "8090:8082"
+      - "8090:8092"
     restart: always
   
   data: 
-    image: node:latest
+    image: node:10.16.0-alpine
     command: 
       - npm install
       - npm run populate
-    restart: always
     volumes:
-      - db_data:/app/db
-
-volumes:
-  db_data: {}
-
-    
-    
-    
-
+      - /app/db
+      - /app/node_modules
+    restart: always

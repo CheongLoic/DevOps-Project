@@ -15,8 +15,8 @@ This repository is used as a DevOps project. Please notice that this repository 
 You can go to this repo to check out what I did in NodeJS (That's mostly me who did everything ...) : https://github.com/CheongLoic/ECE-NodeJS-Lab-2019. 
 I created this repository because my partner in NodeJS wanted to do his DevOps project with Python (or maybe for an other reason ...)
 
-There are : 
-- Home page
+You can : 
+- Go to the Home page
 - Sign In / Sign Up / Sign Out
 - Insert/update/delete metrics once logged in
 - Retrieve the user’s metrics and display it in a graph
@@ -54,13 +54,13 @@ Then to stop the container:
 ### Docker-compose
 Execute `sudo docker-compose up -d`
 
-I tried to test docker-compose.yml several times, but it still doesn't work on the port 8090. I don't know how to fix it. At least I tried
+I tried to test docker-compose.yml several times, but it still doesn't work on the port 8090. I don't know how to fix it. At least I tried.
 
 ![alt test](screenshots/Half_done.PNG)
 
 Then to stop it:
 - `sudo docker-compose stop`
-`sudo docker-compose down`
+- `sudo docker-compose down`
 
 
 ## Run instructions (at the terminal for the NodeJS project)

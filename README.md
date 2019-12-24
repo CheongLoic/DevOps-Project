@@ -64,8 +64,8 @@ Then open a browser and go to the link http://localhost:8082/
 ### Docker-compose
 Execute `sudo docker-compose up -d`
 
-I tried to test docker-compose.yml several times, but it still doesn't work. The problem comes from the memory. Don't know how to fix it. 
-![alt test](Docker_compose_FAILING.PNG)
+I tried to test docker-compose.yml several times, but it still doesn't work on the port 8090. I don't know how to fix it. At least I tried
+![alt test](screenshots/Half_done.PNG)
 
 
 ## Run instructions (at the terminal for the NodeJS project)

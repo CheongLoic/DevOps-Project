@@ -1,15 +1,17 @@
-# ECE NodeJS Project 2019-2020
+# ECE DevOps Project 2019-2020
 [![Build Status](https://travis-ci.org/CheongLoic/nodejs_test.svg?branch=master)](https://travis-ci.org/CheongLoic/nodejs_test)
 
 
 ## Authors
-- CHEONG Loïc : huangloic@hotmail.com
-- GUPTA Chirag : chiraggupta199806@gmail.com
+- CHEONG Loïc : huangloic@hotmail.com or loic.cheong@edu.ece.fr
 
-ECE's students in the group ING 4 SI 03 Inter 
+Student in the group ING 4 SI 03 Inter at ECE Paris
 
 ## About this work
-This work is the final project in NodeJS  for the Web Technology course at ECE Paris-Lyon, ING4.
+This work has been copied-pasted from the NodeJS projectfor the Web Technology course at ECE Paris-Lyon, ING4.
+This repository is used as a DevOps project. Please notice that this repository is poorer in commits and tags than the NodeJS one. 
+You can go to this repo to check out what I did in NodeJS (That's mostly me who did everything ...) : https://github.com/CheongLoic/ECE-NodeJS-Lab-2019 
+I created this repository because my partner in NodeJS wanted to do his DevOps project with Python (or maybe for an other reason ...)
 
 There are : 
 - Home page
@@ -20,11 +22,10 @@ There are :
 
 ## Users' credentials:
 - username : loic ; password : 123456
-- username : chirag ; password : 123456
 
 NB: 
-    - Don't hesitate to play with the UI (User Interface). Enter a wrong username or password to display an error message in the front.
-    - Moreover don't forget to use `npm run populate`, otherwise these ceredentials won't work.
+- Don't hesitate to play with the UI (User Interface). Enter a wrong username or password to display an error message in the front.
+- Moreover don't forget to use `npm run populate`, otherwise these ceredentials won't work.
 
 ## List of routes
 
@@ -53,6 +54,7 @@ After you cloned the repository , execute those commands :
 - `cd Final-Project-NodeJS`
 - `npm install` Install all the dependencies
 - `npm run populate` Populate the database
+- `npm test` Unit tests with mocha and chai 
 - `npm run build` Build to convert .ts files into .js files in /dist folder
 - `npm start` (run the app) or `npm run dev` (reload the page when changes occurs in the source code)
 

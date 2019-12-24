@@ -43,7 +43,7 @@ describe('Metrics', function () {
                         {timestamp: '1576843200000', value: '20'},
                         {timestamp: '1576929600000', value: '50' }
                     ]);
-                    //console.log(result)
+                    console.log(result)
                     done()
                 })
             })
@@ -65,7 +65,7 @@ describe('Metrics', function () {
                     {timestamp: '1576843200000', value: '100'},
                     {timestamp: '1576929600000', value: '50' }
                 ]);
-                //console.log(data)
+                console.log(data)
                 done()
             })
         })
@@ -77,7 +77,7 @@ describe('Metrics', function () {
             const username: string = "elisabeth";
             const timestamp: string = "1576843200000"; //this timestamp already exists in the database
             dbMet.delete(username, timestamp, function (err: Error | null) {
-                //console.log("Data is updating")
+                console.log("Data is updating")
                 dbMet.getAll(username, function (err: Error | null, data?: Metric[] | null) {
                     expect(err).to.be.null;
                     expect(data).to.not.be.undefined;
@@ -85,7 +85,7 @@ describe('Metrics', function () {
                     expect(data).to.be.an("array");
                     expect(data).to.have.lengthOf(1)
                     expect(data).to.deep.include.members([{timestamp: '1576929600000', value: '50' }]);
-                    //console.log(data)
+                    console.log(data)
                     done()
                 })
             })

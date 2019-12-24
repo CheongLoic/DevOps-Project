@@ -8,7 +8,7 @@
 Student in the group ING 4 SI 03 Inter at ECE Paris
 
 ## About this work
-This work has been copied-pasted from the NodeJS projectfor the Web Technology course at ECE Paris-Lyon, ING4.
+This work has been copied-pasted from the NodeJS project for the Web Technologies course at ECE Paris-Lyon. 
 This repository is used as a DevOps project. Please notice that this repository is poorer in commits and tags than the NodeJS one. 
 You can go to this repo to check out what I did in NodeJS (That's mostly me who did everything ...) : https://github.com/CheongLoic/ECE-NodeJS-Lab-2019 
 I created this repository because my partner in NodeJS wanted to do his DevOps project with Python (or maybe for an other reason ...)
@@ -20,12 +20,15 @@ There are :
 - Retrieve the user’s metrics and display it in a graph
 - Only access the user’s metrics, not the other ones
 
+## Problems encounters
+- When I finally succeed to make Travis work on my branch 'master' or 'loic', half of the time it failed. I didn't know why it happened while everything seems correct for me 
+
 ## Users' credentials:
 - username : loic ; password : 123456
 
 NB: 
 - Don't hesitate to play with the UI (User Interface). Enter a wrong username or password to display an error message in the front.
-- Moreover don't forget to use `npm run populate`, otherwise these ceredentials won't work.
+- Moreover don't forget to use `npm run populate` (only in order to run like in the NodeJS project), otherwise these ceredentials won't work.
 
 ## List of routes
 
@@ -48,8 +51,18 @@ NB:
     - http://localhost:8082/user/ Add a new user from Postman
 
 
+## Run instructions (at the terminal for the DevOps project)
+### Dockerfile
+Run those commands below
+- `sudo docker build -t my-docker .`
+- `sudo docker run -d -p 8082:8082 my-docker`
+Then open a browser and go to the link below http://localhost:8082/
 
-## Run instructions
+### Docker-compose
+
+
+
+## Run instructions (at the terminal for the NodeJS project)
 After you cloned the repository , execute those commands :
 - `cd Final-Project-NodeJS`
 - `npm install` Install all the dependencies

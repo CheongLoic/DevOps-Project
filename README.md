@@ -1,4 +1,6 @@
 # ECE DevOps Project 2019-2020
+[[!Application version](https://github.com/CheongLoic/DevOps-Project/releases/tag/v1.2.2)](https://img.shields.io/badge/version-1.2.2-green)
+![Contributors](https://img.shields.io/badge/contributors-1-yellow)
 [![Build Status](https://travis-ci.org/CheongLoic/DevOps-Project.svg?branch=master)](https://travis-ci.org/CheongLoic/DevOps-Project)
 
 

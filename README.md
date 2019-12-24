@@ -29,6 +29,7 @@ There are :
 NB: 
 - Don't hesitate to play with the UI (User Interface). Enter a wrong username or password to display an error message in the front.
 - Moreover don't forget to use `npm run populate` (only in order to run like in the NodeJS project), otherwise these ceredentials won't work.
+- Try to log in with the credentials above or create a new account. Afterwards, add/delete metrics 
 
 ## List of routes
 
@@ -57,12 +58,13 @@ Execute those commands below
 - `sudo docker build -t my-docker .`
 - `sudo docker run -d -p 8082:8082 my-docker`
 
-Then open a browser and go to the link below http://localhost:8082/
+Then open a browser and go to the link http://localhost:8082/ 
+
 
 ### Docker-compose
 Execute `sudo docker-compose up -d`
 
-I tried to test docker-compose.yml several times, but it still doesn't. The problem comes from th memory. Don't know how to fix it. 
+I tried to test docker-compose.yml several times, but it still doesn't work. The problem comes from the memory. Don't know how to fix it. 
 ![alt test](Docker_compose_FAILING.PNG)
 
 
